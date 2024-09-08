@@ -1,0 +1,652 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+/* General Body Styling */
+body {
+    color: #3d4646;
+}
+
+/* Navbar Styling */
+#navbar {
+    background-color: #18181a;
+}
+
+#navbar .navbar-brand,
+#navbar .nav-link {
+    color: #cac9cf;
+}
+
+#navbar .nav-link:hover {
+    color: #89e8e9;
+}
+
+/* Carousel Styling */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.styled-heading {
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+    font-family: 'Playfair Display', serif;
+    /* Updated font */
+    font-size: 4rem;
+    /* Large font for visibility */
+    font-weight: bold;
+    background: linear-gradient(90deg, #333333, #666666);
+    /* Gradient: Dark Grey to Light Grey */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    /* Slight shadow for depth */
+    text-align: center;
+    margin: 30px auto;
+    /* Centered horizontally with margin */
+    padding: 20px;
+    /* Padding around the text */
+    letter-spacing: 2px;
+    /* Spacing between the letters */
+    width: fit-content;
+    /* Shrinks the width to fit the text */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth */
+    overflow: hidden;
+    /* Ensure the pseudo-element doesn't overflow */
+}
+
+.styled-heading {
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+    font-family: 'Playfair Display', serif;
+    /* Updated font */
+    font-size: 4rem;
+    /* Large font for visibility */
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6f00, #333333);
+    /* Gradient: Burnt Orange to Dark Grey */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    /* Slight shadow for depth */
+    text-align: center;
+    margin: 30px auto;
+    /* Centered horizontally with margin */
+    padding: 20px;
+    /* Padding around the text */
+    letter-spacing: 2px;
+    /* Spacing between the letters */
+    width: fit-content;
+    /* Shrinks the width to fit the text */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth */
+    overflow: hidden;
+    /* Ensure the pseudo-element doesn't overflow */
+}
+
+.styled-heading {
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+    font-family: 'Playfair Display', serif;
+    /* Updated font */
+    font-size: 4rem;
+    /* Large font for visibility */
+    font-weight: bold;
+    background: linear-gradient(90deg, #003366, #006699);
+    /* Gradient: Dark Blue to Light Blue */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #333333;
+    /* Solid charcoal color for text */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    /* Slight shadow for depth */
+    text-align: center;
+    margin: 30px auto;
+    /* Centered horizontally with margin */
+    padding: 20px;
+    /* Padding around the text */
+    letter-spacing: 2px;
+    /* Spacing between the letters */
+    width: fit-content;
+    /* Shrinks the width to fit the text */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth */
+    overflow: hidden;
+    /* Ensure the pseudo-element doesn't overflow */
+}
+
+.styled-heading {
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+    font-family: 'Playfair Display', serif;
+    /* Updated font */
+    font-size: 4rem;
+    /* Large font for visibility */
+    font-weight: bold;
+    color: #ffffff;
+    /* White text color */
+    background: linear-gradient(90deg, #333333, #666666);
+    /* Gradient from Charcoal to Light Grey */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Makes text color visible with gradient */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    /* Slight shadow for depth */
+    text-align: center;
+    margin: 30px auto;
+    /* Centered horizontally with margin */
+    padding: 20px;
+    /* Padding around the text */
+    letter-spacing: 2px;
+    /* Spacing between the letters */
+    width: fit-content;
+    /* Shrinks the width to fit the text */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth */
+    overflow: hidden;
+    /* Ensure the pseudo-element doesn't overflow */
+    background-color: #ffffff;
+    /* White background color */
+}
+
+.styled-heading::before {
+    content: '';
+    /* Required to display the pseudo-element */
+    position: absolute;
+    /* Position it behind the text */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    /* Solid white background color */
+    z-index: -1;
+    /* Place it behind the text */
+    border-radius: 10px;
+    /* Match the heading's rounded corners */
+    padding: 20px;
+    /* Match the padding of the heading */
+}
+
+@media (max-width: 768px) {
+    .styled-heading {
+        font-size: 3rem;
+        /* Adjust font size for smaller screens */
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+/* Content Section */
+#content-section {
+    text-align: center;
+    padding: 70px;
+    color: #3d4646;
+}
+
+/* Services Section */
+#services .card-header h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3d4646;
+}
+
+#services {
+    margin: 20px 0;
+    padding: 10px;
+    color: #3d4646;
+}
+
+/* Card Body */
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3d4646;
+    margin-bottom: 20px;
+}
+
+/* Badge Container */
+.services-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Badge Styling */
+.badge {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateX(-100vw);
+    animation: slideIn 2s ease-out forwards;
+    color: white;
+}
+
+/* Badge Hover Effect */
+.badge:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Badge Colors */
+.badge:nth-child(1) {
+    background-color: #007bff;
+}
+
+.badge:nth-child(2) {
+    background-color: #28a745;
+}
+
+.badge:nth-child(3) {
+    background-color: #ff5722;
+    color: white;
+}
+
+.badge:nth-child(4) {
+    background-color: #17a2b8;
+}
+
+.badge:nth-child(5) {
+    background-color: #dc3545;
+}
+
+.badge:nth-child(6) {
+    background-color: #6f42c1;
+}
+
+.badge:nth-child(7) {
+    background-color: #fd7e14;
+}
+
+.badge:nth-child(8) {
+    background-color: #f2542d;
+    color: white;
+}
+
+/* Keyframes for Badge Animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Badge Animation Delay */
+.badge:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.badge:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.badge:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.badge:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.badge:nth-child(5) {
+    animation-delay: 1.5s;
+}
+
+.badge:nth-child(6) {
+    animation-delay: 1.8s;
+}
+
+.badge:nth-child(7) {
+    animation-delay: 2.1s;
+}
+
+.badge:nth-child(8) {
+    animation-delay: 2.4s;
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 70px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* About Section */
+.about-heading {
+    font-size: 3.5rem;
+    color: #212529;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+}
+
+.about-description {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #343a40;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.about-heading:hover {
+    color: #007bff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-description:hover {
+    color: #212529;
+    transform: translateY(-5px);
+}
+
+/* Accordion Styling */
+#accordion.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+#accordion {
+    width: 100%;
+}
+
+.card-header h5 {
+    text-align: center;
+    margin: 0;
+}
+
+.card-header .btn-link {
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    color: #3d4646;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.card-header .btn-link:hover {
+    color: #333;
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Cars Section Styling */
+/* General container styling */
+#cars-section {
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Styling for the card container */
+/* Cars Section Styling */
+#cars-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Container for the cars cards */
+#cars-section .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Car Card Styling */
+#cars-section .card {
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* Remove border */
+    border-radius: 8px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Ensures the image and content stay inside */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Adds a slight shadow */
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
+}
+
+#cars-section .card:hover {
+    transform: translateY(-10px);
+    /* Lift the card slightly on hover */
+}
+
+/* Card image styling */
+#cars-section .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Ensures the image covers the entire area */
+}
+
+/* Card body text styling */
+#cars-section .card-body {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black background */
+    padding: 20px;
+    /* Add padding around the text */
+    border-radius: 0 0 8px 8px;
+    /* Rounded corners on the bottom */
+    height: 100%;
+    /* Ensure the body fills up the space */
+}
+
+#cars-section .card-text {
+    font-size: 1.1rem;
+    /* Slightly larger font size */
+    color: #fff;
+    /* White text for better contrast */
+    line-height: 1.5;
+    /* Increase line height for readability */
+    margin-bottom: 0;
+    /* Remove margin to ensure even padding */
+}
+
+/* Optional: add a hover effect for the card body */
+#cars-section .card:hover .card-body {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker background on hover */
+}
+
+/* Heading styling */
+#cars-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Responsive card layout */
+@media (max-width: 768px) {
+    #cars-section .card-body {
+        padding: 15px;
+    }
+
+    #cars-section .card-text {
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    #cars-section h1 {
+        font-size: 2rem;
+        /* Adjust heading size for smaller screens */
+    }
+}
+
+/* Grid Layout to Ensure Same Number of Cards in Each Row */
+#cars-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Add space between cards */
+}
+
+#cars-section .col-lg-4,
+#cars-section .col-md-6 {
+    padding: 15px;
+    /* Add spacing around each card */
+}
+
+@media (max-width: 1200px) {
+    #cars-section .col-lg-4 {
+        flex: 0 0 50%;
+        /* Two cards per row on medium screens */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #cars-section .col-md-6 {
+        flex: 0 0 100%;
+        /* One card per row on small screens */
+        max-width: 100%;
+    }
+}
+
+/* Styling for the contact link */
+/* Styling for the contact link */
+#nav-contact .contact-link {
+    color: #89e8e9;
+    /* Color for the contact text */
+    font-size: 1rem;
+    /* Adjust font size as needed */
+    font-weight: bold;
+    /* Make the text bold */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s, text-shadow 0.3s;
+    /* Smooth transitions */
+    display: flex;
+    /* Align items horizontally */
+    align-items: center;
+    /* Center icon and text vertically */
+}
+
+#nav-contact .contact-link i {
+    margin-right: 8px;
+    /* Space between icon and text */
+    font-size: 1.2rem;
+    /* Adjust icon size */
+}
+
+#nav-contact .contact-link:hover {
+    color: #ffffff;
+    /* Change color on hover */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* Add subtle text shadow */
+}
+
+/* Contact Section Styling */
+#contact-section {
+    padding: 50px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3d4646;
+    margin-bottom: 40px;
+}
+
+.contact-info .info-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #3d4646;
+}
+
+.contact-info .info-block i {
+    font-size: 1.5rem;
+    color: #89e8e9;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.contact-info .info-block a {
+    color: #3d4646;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info .info-block:hover i {
+    transform: scale(1.2);
+}
+
+.contact-info .info-block a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.google-map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    #contact-section {
+        padding: 20px;
+    }
+
+    .contact-heading {
+        font-size: 2rem;
+    }
+
+    .contact-info .info-block {
+        font-size: 1rem;
+    }
+}

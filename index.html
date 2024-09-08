@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durga Travels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <!-- Hamburger menu stays on the left -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar brand centered -->
+        <a class="navbar-brand mx-auto" href="#">Durga Travels</a>
+
+        <!-- Collapsible navbar items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#carouselExampleIndicators">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cars-section">Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#accordion">FAQ</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact number always on the right -->
+        <span id="nav-contact" class="navbar-text ml-auto">
+            <a href="tel:+916289678480" class="contact-link">
+                <i class="fas fa-phone-alt"></i> +916289678480
+            </a>
+        </span>
+
+
+    </nav>
+
+
+    <h1 class="styled-heading">Durga Travels</h1>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="public/images/car images/img1.jpeg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="public/images/car images/img2.jpg" alt="Second slide">
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" id="about">
+        <div class="container text-center">
+            <h1 class="display-4 about-heading">Who Are We?</h1>
+            <p class="lead about-description">
+                Your Trusted Partner for Seamless Travel<br><br>
+                Durga Travels is a premier car rental service based in Newtown, Kolkata. We are committed to providing
+                our customers with reliable, comfortable, and affordable transportation solutions. Whether you're
+                exploring
+                the vibrant city of Kolkata, embarking on a business trip, or planning a vacation, Durga Travels has the
+                perfect vehicle to suit your needs. Our diverse fleet includes options for solo travelers, families, and
+                groups, ensuring that everyone can find the ideal ride.
+                <br><br>
+                At Durga Travels, we believe in building long-lasting relationships with our customers. Our team of
+                experienced professionals is dedicated to providing personalized assistance and ensuring your complete
+                satisfaction. Let Durga Travels be your guide to exploring the wonders of Kolkata. Book your rental
+                today!
+            </p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="card" id="services">
+        <div class="card-header text-center">
+            <h4>Services</h4>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Services We Offer</h5>
+            <div class="services-badges">
+                <span class="badge badge-primary">Vehicle Rentals</span>
+                <span class="badge badge-success">Airport Pickup and Drop</span>
+                <span class="badge badge-warning">Call and Radio Taxi</span>
+                <span class="badge badge-info">Luxury Car Rentals</span>
+                <span class="badge badge-danger">Outstation Trips</span>
+                <span class="badge badge-primary">Monthly Car Rental</span>
+                <span class="badge badge-success">Office Pickup & Drop</span>
+                <span class="badge badge-warning">School Pickup and Drop</span>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="cars-section">
+        <h1 class="text-center mb-5 card-title" style="font-size: 2.5rem; font-weight: bold;" id="carhead">Our Car
+            Collection</h1>
+        <div class="row">
+            <!-- Luxury Sedan Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="public/images/car images/img14.jpg" alt="Luxury Sedan">
+                    <div class="card-body">
+                        <p class="card-text">Mid-size SUV : Rugged and spacious, perfect for off-road adventures and
+                            city
+                            drives with luxury and reliability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUV Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="public/images/car images/IMG18.jpeg" alt="SUV">
+                    <div class="card-body">
+                        <p class="card-text">Electric Car: Eco-friendly with cutting-edge technology and performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Traveller Car Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="public/images/car images/img17.jpeg" alt="Traveller Car">
+                    <div class="card-body">
+                        <p class="card-text">Traveller: Spacious and ideal for group trips, offering ample seating,
+                            luggage space, and modern amenities for a smooth journey.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electric Car Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="public/images/car images/img19.jpeg" alt="Electric Car">
+                    <div class="card-body">
+                        <p class="card-text">Sedan: Elegant and comfortable, ideal for smooth city drives and long
+                            journeys.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convertible Car Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="public/images/car images/img5.jpg" alt="Convertible">
+                    <div class="card-body">
+                        <p class="card-text">SUV: Versatile and roomy, ideal for both family trips and off-road
+                            adventures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mpv -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="public/images/car images/img20.jpeg" alt="Sports Car">
+                    <div class="card-body">
+                        <p class="card-text">Compact MPV: Efficient and practical, ideal for urban driving with extra
+                            seating and cargo space.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Convertible Car Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="public/images/car images/img21.jpeg" alt="Convertible">
+                    <div class="card-body">
+                        <p class="card-text">Hatchback: Stylish and versatile, offering a sporty design with easy access
+                            to the cargo area.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Convertible Car Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="public/images/car images/img22.jpeg" alt="Convertible">
+                    <div class="card-body">
+                        <p class="card-text">Luxury Car: Experience top-tier comfort and advanced features with our
+                            premium luxury sedans.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Convertible Car Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="public/images/car images/img23.jpg" alt="Convertible">
+                    <div class="card-body">
+                        <p class="card-text">Wedding Decorated Car: Arrive in style with our beautifully decorated
+                            wedding cars, designed to add elegance and charm to your special day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact-section">
+        <h2 class="contact-heading">Get In Touch</h2>
+
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-6 contact-info">
+                <div class="info-block">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>DURGA Travels, Chakpanchuria, Newtown, Near unitech gate 1 opposite side, Kolkata 700156</p>
+                </div>
+
+                <div class="info-block">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+916289678480">+916289678480</a>
+                </div>
+
+                <div class="info-block">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:durgatravels2023@gmail.com">durgatravels2023@gmail.com</a>
+                </div>
+
+                <div class="info-block">
+                    <i class="fas fa-map"></i>
+                    <a href="https://maps.app.goo.gl/3dZSTxwnykrbgdDw6" target="_blank">View on Google Maps</a>
+                </div>
+            </div>
+
+            <!-- Google Map (or Image/Placeholder for Map) -->
+            <div class="col-md-4">
+                <iframe class="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.8346670904955!2d88.47980898513896!3d22.571188849822402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020b004233e2e1%3A0x21c869cbb5133ac7!2sDURGA%20Travels!5e0!3m2!1sen!2sin!4v1725717974978!5m2!1sen!2sin"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FAQ Section -->
+    <!-- FAQ Section -->
+    <div class="container-fluid my-5">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div id="accordion" class="w-100">
+            <div class="card">
+                <div class="card-header text-center" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="false" aria-controls="collapseOne">
+                            What types of vehicles do you offer?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        We offer a range of vehicles including sedans, SUVs, and luxury cars. You can choose the type of
+                        vehicle based on your needs.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            How is the rental charge calculated?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        We calculate the rental charge based on either an hourly rate or per kilometer rate, whichever
+                        is higher.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Do you provide drivers with the vehicles?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Yes, all our rentals come with experienced drivers who are familiar with the local area and can
+                        assist you during your trip.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            How is the fare calculated?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        The fare is calculated based on either the distance traveled (₹X per kilometer) or the time
+                        spent (₹Y per hour). For example, if you traveled 50 kilometers in 2 hours, we will calculate
+                        both and charge according to whichever is higher.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive">
+                            Is fuel included in the rental charges?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        Yes, fuel is included in the rental charges. However, if the trip covers a distance beyond what
+                        was initially agreed upon, there may be additional charges for the extra kilometers driven.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix">
+                            Can I book a car for a full day?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                        Absolutely! We offer flexible rental options, including hourly, half-day, full-day, and even
+                        multi-day bookings. You can reserve a car for as long as you need, and our rates will apply
+                        accordingly.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center" id="headingSeven">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                            aria-expanded="false" aria-controls="collapseSeven">
+                            What if I exceed the estimated time or distance during my trip?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                    <div class="card-body">
+                        If you exceed the estimated time or distance, the additional kilometers or hours will be
+                        calculated
+                        and included in the final fare. Our transparent pricing ensures that there are no hidden
+                        charges.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center" id="headingEight">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                            aria-expanded="false" aria-controls="collapseEight">
+                            How do I book a car?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                    <div class="card-body">
+                        You can book a car by contacting us through our website, phone, or mobile app. Simply provide
+                        your
+                        travel details, including the pick-up location, date, and time, and select your preferred
+                        vehicle.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // Close the navbar when a link is clicked
+            $('#navbarNav .nav-link').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
